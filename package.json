@@ -1,0 +1,35 @@
+{
+  "name": "jbj-template",
+  "version": "1.0.0",
+  "description": "JBJ template module: advanced use of variables within strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Inist-CNRS/node-jbj-template.git"
+  },
+  "keywords": [
+    "JSON",
+    "jbj",
+    "string",
+    "template",
+    "variables"
+  ],
+  "author": "François Parmentier <francois.parmentier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inist-CNRS/node-jbj-template/issues"
+  },
+  "homepage": "https://github.com/Inist-CNRS/node-jbj-template#readme",
+  "devDependencies": {
+    "jbj": "^4.0.0",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "filtrex": "^0.5.4",
+    "mustache": "^2.2.0"
+  }
+}
