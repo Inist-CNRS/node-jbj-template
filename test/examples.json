@@ -1,0 +1,56 @@
+{
+  "round": {
+    "input": {
+      "a" : 20,
+      "b" : 3
+    },
+    "stylesheet": {
+      "compute": "round(a / b)"
+    }
+  },
+  "round this": {
+    "input": {
+      "a" : 20,
+      "b" : 3
+    },
+    "stylesheet": {
+      "compute#1": "a / b",
+      "compute#2": "round(this)"
+    }
+  },
+  "variables ($)": {
+    "input": {
+      "a" : 20,
+      "b" : 3
+    },
+    "stylesheet": {
+      "$x" : {
+        "compute#1": "a / b",
+        "compute#2": "round(this)"
+      },
+      "$y" : {
+        "path": "b"
+      },
+      "$z" : {
+        "compute": "x + y",
+      }
+    }
+  },
+  "template": {
+    "input": {
+      "a" : {
+        "b" : {
+          "c" : "1"
+        },
+        "d" : "2",
+        "e" : "4"
+      },
+      "f": "8"
+    },
+    "stylesheet": {
+      "$a" : {
+        "template": "X{{a.b.c}}X{{a.d}}X{{a.e}}X{{f}}",
+      }
+    }
+  }
+}
