@@ -49,7 +49,7 @@
     },
     "stylesheet": {
       "$a" : {
-        "template": "X{{a.b.c}}X{{a.d}}X{{a.e}}X{{f}}",
+        "template": "X{{a.b.c}}X{{a.d}}X{{a.e}}X{{f}}"
       }
     }
   }
