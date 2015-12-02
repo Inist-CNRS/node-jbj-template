@@ -32,7 +32,7 @@
         "path": "b"
       },
       "$z" : {
-        "compute": "x + y",
+        "compute": "x + y"
       }
     }
   },
