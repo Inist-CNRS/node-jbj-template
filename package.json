@@ -1,6 +1,6 @@
 {
   "name": "jbj-template",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "JBJ template module: advanced use of variables within strings",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,8 @@
     "mocha": "^2.3.4"
   },
   "dependencies": {
-	"hogan.js": "^3.0.2",
-	"xml-mapping": "^1.7.0",
-	"csv-string": "^2.3.0"
+    "hogan.js": "^3.0.2",
+    "xml-mapping": "^1.7.0",
+    "csv-string": "^2.3.0"
   }
 }
