@@ -3,8 +3,10 @@
 'use strict';
 var assert = require('assert')
   , JBJ = require('jbj');
-
+ 
 JBJ.use(require('..'));
+
+
 
 describe('asynchronous weird', function () {
 

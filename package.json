@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/Inist-CNRS/node-jbj-template#readme",
   "devDependencies": {
-    "jbj": "^4.0.0",
+    "jbj": "^6.0.0",
     "mocha": "^2.3.4"
   },
   "dependencies": {
-    "extend": "^3.0.0",
-    "filtrex": "^0.5.4",
-    "mustache": "^2.2.0"
+	"hogan.js": "^3.0.2",
+	"xml-mapping": "^1.7.0",
+	"csv-string": "^2.3.0"
   }
 }
