@@ -53,34 +53,38 @@ and *input*
     // output : I say hello to the world
 ```
 
-<a id="compute"></a>
-### compute: expression
+<a id="templateUrl"></a>
+### templateUrl: url
 
-Compute an expression with all variables of the *input*. Use the [filtrex](https://github.com/joewalnes/filtrex#expressions) syntax.
-Note : `this` variable contains *input*
-```javascript
-    var stylesheet = {
-        "set" : {
-            "a" : 20,
-            "b" : 3,
-            "c" : 5,
-            "d" : 8
-        },
-        "$x" : {
-            "compute#1": "a / b",
-            "compute#2": "round(this)",
-            "cast": "number"
-        },
-        "$y" : {
-            "path": "b",
-            "cast": "number"
-        },
-        "$z" : {
-            "compute": "x + y",
-        }
-    };
-    // output : 10
+Build a string with [mustache](https://github.com/janl/mustache.js) template
+taken from an external file and *input*.
+
+The template file is accessed *via* an URL (the protocol has to be defined, see
+[register](https://github.com/Inist-CNRS/node-jbj#register) and
+[source](https://github.com/Inist-CNRS/node-jbj#source)).
+
+In the example below, the content of `file://./test/template.mustache` is
+`X{{a.b.c}}X{{a.d}}X{{a.e}}X{{f}}`.
+
+```json
+{
+      "input": {
+          "a" : {
+              "b" : {
+                  "c" : "1"
+              },
+              "d" : "2",
+              "e" : "4"
+          },
+          "f": "8"
+      },
+      "stylesheet": {
+          "templateURL": "file://./test/template.mustache"
+      },
+      "expected":  "X1X2X4X8\n"
+  }
 ```
+
 
 ## Examples
 
